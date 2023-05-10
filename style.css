@@ -1,0 +1,12 @@
+* {
+    margin: 0px;
+}
+/* Nessa parte podemos declarar variaveis, sendo mais facil para trabalhar com tamanhos de letras, como tambem as cores que ja foram definidas da paleta de cores do coletivo*/
+:root {
+    --cor0: black; 
+}
+
+/* para utilizar a variavel e dessa forma*/
+body {
+    background-color: var(--cor0);
+}
