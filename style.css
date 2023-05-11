@@ -10,3 +10,9 @@
 body {
     background-color: var(--cor0);
 }
+#cor1{
+	color: #E7A386 !important;
+}
+.active{
+	color: #E7A386;
+}
