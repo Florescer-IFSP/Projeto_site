@@ -8,11 +8,28 @@
 
 /* para utilizar a variavel e dessa forma*/
 body {
-    background-color: var(--cor0);
+    background-color: white;
 }
 #cor1{
 	color: #E7A386 !important;
 }
-.active{
-	color: #E7A386;
+#cor2{
+     color: #FFEEE2;
 }
+@media(min-width: 1024px ){
+	.div-img-carousel, .item.active{
+		overflow: hidden;
+		width: 700px;
+		height: 400px;
+		margin: 0;
+	}
+	.carousel-inner{
+		width: 40%;
+	}
+	#meuslider{
+		width: 700px;
+		height: 400px;
+	}
+}
+
+
