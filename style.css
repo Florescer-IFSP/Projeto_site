@@ -16,6 +16,21 @@ body {
 #cor2{
      color: #FFEEE2;
 }
+#cor3{
+     color: #F8F2EE;
+}
+#cor4{
+     color: #4B4545;
+}
+#cor5{
+     color: #9256A4;
+}
+#cor6{
+     color: #F5E1C5;
+}
+#cor7{
+     color: #AB4925;
+}
 @media(min-width: 1024px ){
 	.div-img-carousel, .item.active{
 		overflow: hidden;
