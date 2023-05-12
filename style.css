@@ -11,25 +11,26 @@ body {
     background-color: white;
 }
 #cor1{
-	color: #E7A386 !important;
+	color: #E7A386 !important; <!-- ICONS -->
 }
 #cor2{
-     color: #FFEEE2;
+     color: #FFEEE2;  <!-- RODAPE  E JUMBOTRON-->
+	background: #FFEEE2;
 }
 #cor3{
-     color: #F8F2EE;
+     color: #F8F2EE; <!--  -->
 }
 #cor4{
-     color: #4B4545;
+     color: #4B4545; <!-- ESCRITA CABEÇALHO -->
 }
 #cor5{
-     color: #9256A4;
+     color: #9256A4; <!-- TÍTULOS -->
 }
 #cor6{
-     color: #F5E1C5;
+     color: #F5E1C5; <!-- SETAS CARROSSER -->
 }
 #cor7{
-     color: #AB4925;
+     color: #AB4925; <!-- SUBTÍTULOS -->
 }
 @media(min-width: 1024px ){
 	.div-img-carousel, .item.active{
