@@ -11,29 +11,29 @@ body {
     background-color: white;
 }
 #cor1{
-	color: #E7A386 !important; <!-- ICONS -->
+	color: #E7A386 !important; /* ICONS */
 }
 #cor2{
-     color: #FFEEE2;  <!-- RODAPE  E JUMBOTRON-->
+     color: #FFEEE2;  /* RODAPE  E JUMBOTRON*/
 	background: #FFEEE2;
 }
 #cor3{
-     color: #F8F2EE; <!--  -->
+     color: #F8F2EE; /*  */
 }
 #cor4{
-     color: #4B4545; <!-- ESCRITA CABEÇALHO -->
+     color: #4B4545; /* ESCRITA CABEÇALHO */
 }
 #cor5{
-     color: #9256A4; <!-- TÍTULOS -->
+     color: #9256A4; /* TÍTULOS */
 }
 #cor6{
-     color: #F5E1C5; <!-- SETAS CARROSSER -->
+     color: #F5E1C5; /* SETAS CARROSSER */
 }
 #cor7{
-     color: #AB4925; <!-- SUBTÍTULOS SOBRE NÓS-->
+     color: #AB4925; /* SUBTÍTULOS SOBRE NÓS*/
 }
 #cor8{
-     color: #94221E; <!-- TÍTULO SOBRE NÓS -->
+     color: #94221E; /* TÍTULO SOBRE NÓS */
      text-align: center;
      font-weight: bold;	
 }
