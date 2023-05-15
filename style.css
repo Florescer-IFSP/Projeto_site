@@ -30,7 +30,15 @@ body {
      color: #F5E1C5; <!-- SETAS CARROSSER -->
 }
 #cor7{
-     color: #AB4925; <!-- SUBTÍTULOS -->
+     color: #AB4925; <!-- SUBTÍTULOS SOBRE NÓS-->
+}
+#cor8{
+     color: #94221E; <!-- TÍTULO SOBRE NÓS -->
+     text-align: center;
+     font-weight: bold;	
+}
+#cor9{
+	color: #621A00;
 }
 @media(min-width: 1024px ){
 	.div-img-carousel, .item.active{
@@ -51,6 +59,22 @@ body {
 	color: #9256A4;
 	font-weight: bold;
 }
-
-
-
+hr{
+	height: 1px;
+	background-color: #621A00;
+}
+#texto{
+	font-size: 25px;
+	text-align: center;
+	font-weight: bold;
+}
+#texto1{
+	font-size: 18px;
+	text-align: justify;
+	font-weight: bold;	
+}
+#texto2{
+	font-size: 18px;
+	text-align: justify;
+	font-weight: bold;
+}
