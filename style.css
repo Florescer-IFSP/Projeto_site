@@ -19,6 +19,7 @@ body {
 }
 #cor3{
      color: #F8F2EE; /*  */
+     background: #F8F2EE;
 }
 #cor4{
      color: #4B4545; /* ESCRITA CABEÇALHO */
@@ -61,7 +62,7 @@ body {
 }
 hr{
 	height: 1px;
-	background-color: #621A00;
+	background-color:;
 }
 #texto{
 	font-size: 25px;
