@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Projeto Site</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- a primeira parte do site, no caso o topo do site, tera os links dos outros sites-->
-    <nav class="navbar navbar-default">
+  <html lang="pt-br">
+    <head>
+      <title>Sobre Nós</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+      <!--CABEÇALHO-->
+      <nav class="navbar navbar-default">
         <div class="container-fluid" style="background-color:#FFFFFF">
-           <div class="navbar-header" >
-           <a class="navbar-brand" href="#">Florescer</a>
+          <div class="navbar-header" >
+            <a class="navbar-brand" href="#">Florescer</a>
           </div>
 
-         <form  class="navbar-form navbar-left" action="/action_page.php">
+        <form class="navbar-form navbar-left" action="/action_page.php">
            <div class="form-group">
               <input type="text" class="form-control" id="cor2">
               
@@ -26,101 +26,77 @@
               
            </div>  
          </form>
-         
+
          <ul class="nav navbar-nav navbar-center">
-            <li class="active"><a href="#" id="cor1"><n>HOME</n></a></li>
+            <li><a href="index.html">HOME</a></li>
             <li><a href="projetos.html">PROJETOS</a></li>
-            <li><a href="sobreNos.html">SOBRE NÓS</a></li>
+            <li class="active"><a href="#" id="cor1">SOBRE NÓS</a></li>
             <li><a href="doar.html">QUERO DOAR</a></li>
             <li><a href="#">INSTA</a></li>
             <!--<i class="bi bi-instagram"><a href=""></a></i>-->
             <li><a href="#">FACE</a></li>
             <li><a href="#">TWITTER</a></li>
           </ul>
-      
+        
         </div>
       </nav>
-    
-    <!-- na segunda parte tera uma imagem grande, podemos pensar em colocar mais alguma coisa aqui-->
-    <!--CARROSSEL-->
-      <!--<div class="container">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">-->
-        <!-- INDICADORES -->
-          <!--<ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
 
-         IMAGENS CARROSSEL 
-        <div id="meuslider" class="carousel-inner">
-          <div class="item active">
-            <img class="d-block w-100" src="#">
-          </div>
+      <div class="jumbotron text-center" id="cor3">
+      <h2><b>COLETIVO REVOLUÇÃO DAS FLORES & FLORESCER</b></h2>
+    </div>
 
-          <div class="item">
-           <img class="d-block w-100" src="#">
-          </div>
+      <!-- ASSUNTO -->
+      <div class="container">
+      <div class="row">
 
-          <div class="item">
-           <img class="d-block w-100" src="#">
-          </div>
-         </div> 
-      </div> -->
-
-      <!-- SETAS -->
-      <!--<a class="left carousel-control" href="#myCarousel" data-slide="prev" style="color:#F5E1C5">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Anterior</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next" style="color:#F5E1C5">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Próximo</span>
-      </a>
-      </div>--> 
-    
-    <!-- nessa parte do main iremos colocar as noticias eventos, entre outras coisas que serão importante para o site-->
-    <main>
-        <div class="row">
-          <div class="col-sm-2"></div>
-        <div class="col-sm-2">
-          <img src="">
-          <p><center>POBREZA MENSTRUAL NO E.E. ADOLPHO CARVALHO</center></p>
+        <div class="col-sm-4">
+          <h1>FOTO DO COLETIVO AQUI</h1>
+            <!--Foto-->
         </div>
 
-        <div class="col-sm-2">
-          <img src="">
-          <p><center>RODA DE CONVERSA NA FEIRA AGROECOLÓGICA</center></p>
+        <div class="col-sm-8">
+           <h3 id="cor8">Coletivo "Revolução das Flores"</h3>
+              <p id="texto">O coletivo "Revolução das Flores" foi criado em 2019, pelo coletivo Ecofeminista da Esalq/USP, o qual <font color="#AB4925"> visa ajudar as pessoas em situação de vulnerabilidade social.</font></h3> 
         </div>
-
-        <div class="col-sm-2">
-          <img src="">
-          <p><center>ENCONTRO SOLIDÁRIO SOBRE COMBATE A VIOLÊNCIA DOMÉSTICA</center></p>
-        </div>
-
-        <div class="col-sm-2">
-          <img src="">
-          <p><center>RODA DE CONVERSA COM A COMAD PIRACICABA</center></p>
-        </div>
-        <div class="col-sm-2"></div>
       </div>
 
-      <!-- Dentro do main, podemos acrescentar mais coisas, do que somente eventos sabe, no caso estabelecer textos para exibir na pagina principal como: 
-        o que e pobreza mestrual ?
-        como podemos mudar isso ?
-        Porque isso e importante ?-->
-      <!-- no caso, como não temos conteudos dessas perguntas, somente abram espaço para elas sabe-->
-    </main>
+      <hr>
 
-    <!-- nesse parte sera o rodape, com as informações nossas e sobre a parceria-->
-    <footer>
-        <nav class="navbar navbar-default  navbar-fixed-bottom" role="navigation">
-         <div class="footer"; id="cor3">
-          <div class="text-center" id="cor3" style=" padding: 20px;" >
+      <div class="row">
+        <center>
+        <div class="col-sm-4">
+          <h2 id="cor7">TEMAS ABORDADOS </h2>
+          <p id="texto1">Sustentabilidade, educação sexual, pobreza menstrual e socioambiental.</p>
+        </div>
+
+        <div class="col-sm-4">
+          <h2 id="cor7">LUGARES DE ATUAÇÃO</h2>
+          <p id="texto1">Comunidade da periferia de Piracicaba Escolas de Piracicaba Esalq /USP.</p>
+        </div>
+
+        <div class="col-sm-4">
+          <h2 id="cor7">PÚBLICO ALVO</h2>
+          <p id="texto1">O Coletivo acolhe a todos, todas e todes que desejam aprender e compartilhar conhecimento sobre dignidade menstrual.</p>
+        </div>
+        </center>
+      </div>
+    </div>
+
+
+     
+
+      <!--RODAPÉ (PRECISA CONSERTAR PQ ESTA INVEDINDO O TEXTO)-->
+      <!-- O problema esta no nav na class, no texto "navbar-fixed-bottom" pode tirar ele?-->
+      <footer>
+      <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+          <div class="footer"; id="cor3">
+          <div class="text-center" style="#F8F2EE" ; style=" padding: 20px;"  >
             <a href="#" style="width:100%">
             <a href="" style="width:100%"> 
          </div>
       </nav>  
       </footer>
-</body>
-</html>
+
+    </body>
+
+  </html>
