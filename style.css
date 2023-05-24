@@ -8,6 +8,7 @@
 
 /* para utilizar a variavel e dessa forma*/
 body {
+	overflow-x: hidden!important;/*para tirar a barra de scroll horizontal*/
     background-color: white;
 }
 #cor1{
@@ -81,16 +82,15 @@ hr{
 }
 
 .principal {
-	width: 600px;
 	margin: auto;
 }
 /* voce pode criar um estilo para tag dentro de tag da seguinte forma */
-.principal > h1{
+.principal > h2{
 	text-align: center;
 	font-weight: bold;
 }
 
-.principa > p {
+.principal > p {
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: justify;
 	font-weight: 14px;
