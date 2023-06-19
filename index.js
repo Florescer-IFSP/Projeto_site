@@ -1,5 +1,5 @@
-var b = window.document.getElementById("botao")
-var l = window.document.getElementById("link")
+var b = window.document.getElementsByClassName("botao")
+var l = window.document.getElementsByClassName("link")
 
 b.addEventListener("mouseenter", entrarB)
 b.addEventListener("mouseout", sairB)
