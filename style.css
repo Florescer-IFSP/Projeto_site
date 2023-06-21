@@ -127,6 +127,12 @@ button{
   	cursor: pointer;
 }
 
+header{
+	height: 250px;
+	background-image: linear-gradient(to left, #ca8c71 , #ad5a3b);
+	border-radius: 5px 0px 5px 0px;
+}
+
 .pesquisa{
 	padding-top: 10px;
 }
