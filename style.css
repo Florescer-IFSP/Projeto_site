@@ -10,6 +10,8 @@
 body {
 	overflow-x: hidden!important;/*para tirar a barra de scroll horizontal*/
     background-color: white;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
 }
 #cor1{
 	color: #E7A386 !important; /* ICONS */
@@ -136,4 +138,5 @@ header{
 .pesquisa{
 	padding-top: 10px;
 }
+
 
