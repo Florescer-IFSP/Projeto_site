@@ -1,0 +1,89 @@
+main {
+    width: 100%;
+    background: #e08607;
+    background-size: cover;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+#pesquisas {
+    background-color: #f7a833;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem 3.5rem;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#pesquisas div{
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+}
+
+#pesquisas .img {
+    text-align: center;
+}
+
+.ondas {
+    min-height: 80vh;
+    background-color: aquamarine;
+    position: relative;
+}
+
+.custom-shape-divider-top-1689987019 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1689987019 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 97px;
+}
+
+.custom-shape-divider-top-1689987019 .shape-fill {
+    fill: #e08607;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1689987019 svg {
+        width: calc(100% + 1.3px);
+        height: 42px;
+    }
+}
+
+.custom-shape-divider-bottom-1689986656 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1689986656 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 76px;
+}
+
+.custom-shape-divider-bottom-1689986656 .shape-fill {
+    fill: #e08607;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1689986656 svg {
+        width: calc(100% + 1.3px);
+        height: 42px;
+    }
+}
