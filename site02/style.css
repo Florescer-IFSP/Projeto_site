@@ -52,7 +52,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    background: #E7A386;
+    background: #B0413E ;
     height: 8vh;
 }
 
@@ -140,7 +140,7 @@ nav {
 /* estrutura principal do site */
 
 main {
-    background: #e08607;
+    background: #5E8C61 ;
     background-size: cover;
     padding-bottom: 50px;
 }
@@ -149,7 +149,7 @@ main {
     position: relative;
     padding: 0px;
     height: 70vh;
-	background-image: linear-gradient(to left, #ca8c71 , #ad5a3b);
+	background-image: linear-gradient(to left, #E2D4B4  , #E2D4B4 );
     display: flex;
     align-items: center;
     justify-content: center;
@@ -183,7 +183,7 @@ section {
 }
 
 .custom-shape-divider-bottom-1689939107 .shape-fill {
-    fill: #e08607;
+    fill: #5E8C61 ;
 }
 
 
@@ -221,7 +221,7 @@ section {
 
 .destaque {
     position: relative;
-    background-color: darkblue;
+    background-color: #C87D75 ;
     height: 500px;
 }
  /* fim da estrutura principal do site*/
@@ -234,7 +234,7 @@ footer {
 }
 
 #footer_content {
-    background-color: var(--color-neutral-10);
+    background-color: #230007;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 3rem 3.5rem;
@@ -259,8 +259,6 @@ footer {
     align-items: center;
     justify-content: center;
     height: 3rem;
-    width: 3rem;
-    color: var(--color-neutral-40);
     border-radius: 50%;
     transition: all 0.4s;
 }
@@ -366,4 +364,7 @@ footer {
 }
 
 /* Fim do rodapé */
+
+    width: 3rem;
+    color: #230007;
 
