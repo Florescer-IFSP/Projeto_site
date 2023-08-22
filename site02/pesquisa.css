@@ -6,13 +6,23 @@ main {
     padding-bottom: 50px;
 }
 
-#pesquisas {
+.pesquisa {
     background-color: #f7a833;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 3rem 3.5rem;
-    margin: 10px;
+    margin: 20px 50px;
     border-radius: 20px;
+}
+
+.link {
+    background-color: greenyellow;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.link:hover{
+    text-decoration: none;
 }
 
 #pesquisas div{

@@ -8,6 +8,10 @@
     <title>Projeto Site</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <!-- Google Font Link for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="calendario.css">
+    <script src="calendario.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
@@ -75,18 +79,18 @@
       </div>
     </div>
     <div id="texto_vertical">
+      <div class="titulo_secundario"><h3>Primeira Pergunta?</h3></div>
       <div class="informacao">
-        <div class="titulo_secundario"><h3>Primeira Pergunta?</h3></div>
         <div class="imagem"><img src="img/imagem01.jpg" alt="imagem01" style="height: 150px; width: 200px;"></div>
         <div class="texto_informativo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias incidunt necessitatibus provident minima perferendis, ipsa dolore quae illum unde? Reiciendis illo culpa, eaque ad delectus tempore suscipit blanditiis consectetur voluptatum!</div>
       </div>
+      <div class="titulo_secundario"><h3>Segunda Pergunta?</h3></div>
       <div class="informacao">
-        <div class="titulo_secundario"><h3>Segunda Pergunta?</h3></div>
         <div class="imagem"><img src="img/imagem02.jpg" alt="imagem03" style="height: 150px; width: 200px;"></div>
         <div class="texto_informativo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam placeat pariatur explicabo ex. Laborum vero, earum aliquam quidem eos debitis, rem aliquid ipsum corrupti fuga cum at beatae sit? Odio!</div>
       </div>
+      <div class="titulo_secundario"><h3>Terceira Pergunta?</h3></div>
       <div class="informacao">
-        <div class="titulo_secundario"><h3>Terceira Pergunta?</h3></div>
         <div class="imagem"><img src="img/imagem03.jpg" alt="imagem03" style="height: 150px; width: 200px;"></div>
         <div class="texto_informativo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facere aliquid consectetur dolore libero! Sequi magnam ab ipsam excepturi! Ratione fugiat quidem velit molestias repellendus dolore sit suscipit minima libero.</div>
       </div>
@@ -94,6 +98,27 @@
 
     <!-- Noticias/informação destaques-->
     <div class="destaque">
+      <div class="wrapper">
+        <div class="topo">
+            <p class="current-date"></p>
+            <div class="icons">
+                <span id="prev" class="material-symbols-outlined">chevron_left</span>
+                <span id="next" class="material-symbols-outlined">chevron_right</span>
+            </div>
+        </div>
+        <div class="calendar">
+            <ul class="weeks">
+                <li>Dom</li>
+                <li>Seg</li>
+                <li>Ter</li>
+                <li>Qua</li>
+                <li>Qui</li>
+                <li>Sex</li>
+                <li>Sab</li>
+            </ul>
+            <ul class="days"></ul>
+        </div>
+      </div>
     </div>
   </main>
 
