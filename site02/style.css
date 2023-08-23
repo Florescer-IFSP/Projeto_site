@@ -39,6 +39,7 @@ nav a {
 
 nav a:hover {
     opacity: 0.7;
+    color: #ffbcb5;
 }
 
 .logo {
@@ -52,7 +53,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    background: #B0413E ;
+    background: #783731 ;
     height: 8vh;
 }
 
@@ -142,7 +143,7 @@ nav {
 /* estrutura principal do site */
 
 main {
-    background: #5E8C61 ;
+    background: #709C72 ;
     background-size: cover;
     padding-bottom: 50px;
     z-index: 1;
@@ -152,7 +153,7 @@ main {
     position: relative;
     padding: 0px;
     height: 70vh;
-	background-image: linear-gradient(to left, #E2D4B4  , #E2D4B4 );
+	background-image: linear-gradient(to left, #F0E8D6  , #F0E8D6 );
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,7 +187,7 @@ section {
 }
 
 .custom-shape-divider-bottom-1689939107 .shape-fill {
-    fill: #5E8C61 ;
+    fill: #709C72 ;
 }
 
 
@@ -201,10 +202,18 @@ section {
     width: 250px;
 }
 
+.titulo{
+    color: black;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-style: arial;
+}
+
 .titulo_secundario {
     color: white;
     margin-bottom: 50px;
-    font-size: 100px;
+    font-size: 110px;
+    font-style: arial;
 }
 .informacao {
     padding-top: 20px;
@@ -220,6 +229,7 @@ section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
+    font-style: arial;
 }
 
 @media screen and (max-width: 1000px) {
@@ -242,11 +252,12 @@ section {
     margin: auto;
     width: 500px;
     text-align: center;
+    font-style: arial;
 }
 
 .destaque {
     position: relative;
-    background-color: #C87D75 ;
+    background-color: #93C095 ;
     padding: 80px 0px 80px 60px;
 }
  /* fim da estrutura principal do site*/
@@ -366,30 +377,30 @@ footer {
 #footer_copyright {
     display: flex;
     justify-content: center;
-    background-color: var(--color-neutral-0);
-    font-size: 1.5rem;
-    padding: 1.5rem;
-    font-weight: 100;
+background-color: var(--color-neutral-0);
+font-size: 1.5rem;
+padding: 1.5rem;
+font-weight: 100;
 }
 
 @media screen and (max-width: 768px) {
-    #footer_content {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-    
+#footer_content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
 }
 
 @media screen and (max-width: 426px) {
-    #footer_content {
-        grid-template-columns: repeat(1, 1fr);
-        padding: 3rem 2rem;
-    }
-    
+#footer_content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
+}
+
 }
 
 /* Fim do rodapé */
 /*
-    width: 3rem;
-    color: #230007;
+width: 3rem;
+color: #230007;
 */
