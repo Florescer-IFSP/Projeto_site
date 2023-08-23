@@ -1,13 +1,13 @@
 main {
     width: 100%;
-    background: #e08607;
+    background: #709C72;
     background-size: cover;
     padding-top: 10px;
     padding-bottom: 50px;
 }
 
 .pesquisa {
-    background-color: #f7a833;
+    background-color: #93C095; /* caixa interna*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 3rem 3.5rem;
@@ -16,13 +16,15 @@ main {
 }
 
 .link {
-    background-color: greenyellow;
+    background-color: #ffbcb5;
     padding: 5px;
     border-radius: 10px;
+    color: black;
 }
 
 .link:hover{
-    text-decoration: none;
+    background-color: #df594c;
+    color: white;
 }
 
 #pesquisas div{
@@ -37,7 +39,7 @@ main {
 
 .ondas {
     min-height: 80vh;
-    background-color: aquamarine;
+    background-color: #ffbcb5;
     position: relative;
 }
 
@@ -59,7 +61,7 @@ main {
 }
 
 .custom-shape-divider-top-1689987019 .shape-fill {
-    fill: #e08607;
+    fill: #709C72;
 }
 
 /** For mobile devices **/
@@ -87,7 +89,7 @@ main {
 }
 
 .custom-shape-divider-bottom-1689986656 .shape-fill {
-    fill: #e08607;
+    fill: #709C72;
 }
 
 /** For mobile devices **/
