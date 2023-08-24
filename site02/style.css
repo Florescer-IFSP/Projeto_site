@@ -251,6 +251,7 @@ section {
 #texto_vertical {
     margin: auto;
     width: 500px;
+    margin-bottom: 50px;
     text-align: center;
     font-style: arial;
 }
