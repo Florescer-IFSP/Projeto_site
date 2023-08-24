@@ -3,10 +3,11 @@ img {
   display: block;
 }
 
-h3 {
+#subtitulo {
 	text-align: center;
 	font-weight: bold;
 	font-size: 30px;
+	color: white;
 }
 
 p {
