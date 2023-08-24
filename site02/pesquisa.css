@@ -40,6 +40,8 @@ main {
 .ondas {
     min-height: 80vh;
     background-color: #ffbcb5;
+    margin: 50px 50px;
+    border-radius: 20%;
     position: relative;
 }
 
