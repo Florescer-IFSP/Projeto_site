@@ -2,19 +2,28 @@
   height: 100px;
   text-align: center;
   font-size: 23px;
+  font-family: tahoma;
+  margin-top: 50px;
+  color: #c57783;
+  font-weight: bold;
 }
 
 img {
   margin: auto;
   display: block;
 } 
-h3 {
+#titulo {
   text-align: center;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 26px;
+  color: white;
+  text-shadow: #3B543C 0.1em 0.1em 0.2em
 }
 
 p {
   text-align: justify;
   font-size: 18px;
+}
+iframe{
+  border-radius: 20px;
 }
