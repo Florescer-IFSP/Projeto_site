@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <title>Projeto Site</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Google Font Link for Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="calendario.css">
-    <script src="calendario.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/calendario.css">
+    <link rel="stylesheet" href="./assets/css/carrossel.css">
+    <script src="./assets/js/calendario.js" defer></script>
+    <script src="./assets/js/slides.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
@@ -26,14 +28,14 @@
         <div class="line3"></div>
       </div>
       <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="pesquisa.html">Pesquisa</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="doacao.html">Doação</a></li>
-        <li><a href="#"><img src="img/logotipo_instagram.ico" alt="Instagram"></a></li>
-        <li><a href="#"><img src="img/logotipo_facebook.ico" alt="Facebook"></a></li>
-        <li><a href="#"><img src="img/logotipo_twitter.ico" alt="Twitter"></a></li>
+        <li class="nav-link"><a href="index.html">Home</a></li>
+        <li class="nav-link"><a href="pesquisa.html">Pesquisa</a></li>
+        <li class="nav-link"><a href="projetos.html">Projetos</a></li>
+        <li class="nav-link"><a href="sobre.html">Sobre</a></li>
+        <li class="nav-link"><a href="doacao.html">Doação</a></li>
+        <li><a href="#"><img src="./assets/img/logotipo_instagram.ico" alt="Instagram"></a></li>
+        <li><a href="#"><img src="./assets/img/logotipo_facebook.ico" alt="Facebook"></a></li>
+        <li><a href="#"><img src="./assets/img/logotipo_twitter.ico" alt="Twitter"></a></li>
       </ul>
     </nav>
     <!-- Fim da barra de navegação -->
@@ -50,7 +52,42 @@
     </form>-->
     <!-- Carrossel -->
     <div id="carrossel">
-
+      <div class="conteudo">
+        <div class="wrapper">
+          <div class="slide-wrapper" data-slide="wrapper">
+              <button class="slide-nav-button slide-nav-previous fas fa-chevron-left" data-slide="nav-previous-button"></button>
+              <button class="slide-nav-button slide-nav-next fas fa-chevron-right" data-slide="nav-next-button"></button>
+              <div class="slide-list" data-slide="list">
+                  <div class="slide-item" data-slide="item" data-index="0">
+                      <div class="slide-content">
+                          <img class="slide-image" src="./assets/img/imagem06.jpg" alt="Imagem01">
+                          <div class="slide-description">
+                              <h3>Imagem01</h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="slide-item" data-slide="item" data-index="1">
+                      <div class="slide-content">
+                          <img class="slide-image" src="./assets/img/imagem06.jpg" alt="Imagem02">
+                          <div class="slide-description">
+                              <h3>Imagem02</h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="slide-item" data-slide="item" data-index="2">
+                      <div class="slide-content">
+                          <img class="slide-image" src="./assets/img/imagem06.jpg" alt="Imagem03">
+                          <div class="slide-description">
+                              <h3>Imagem03</h3>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="slide-controls" data-slide="controls-wrapper">
+              </div>
+          </div>
+        </div>
+      </div>
       <!-- Linha ondulada -->
       <div class="custom-shape-divider-bottom-1689939107">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -62,36 +99,36 @@
     <!-- Noticias horizontais -->
     <div id="noticias_horizontal">
       <div class="noticia">
-        <div class="imagem"><img src="img/imagem01.jpg" alt="imagem01" style="height: 150px; width: 200px;"></div>
+        <div class="imagem"><img src="./assets/img/imagem01.jpg" alt="imagem01" style="height: 150px; width: 200px;"></div>
         <div class="titulo">Primeira noticia</div>
       </div>
       <div class="noticia">
-        <div class="imagem"><img src="img/imagem02.jpg" alt="imagem02" style="height: 150px; width: 200px;"></div>
+        <div class="imagem"><img src="./assets/img/imagem02.jpg" alt="imagem02" style="height: 150px; width: 200px;"></div>
         <div class="titulo">Segunda noticia</div>
       </div>
       <div class="noticia">
-        <div class="imagem"><img src="img/imagem03.jpg" alt="imagem03" style="height: 150px; width: 200px;"></div>
+        <div class="imagem"><img src="./assets/img/imagem03.jpg" alt="imagem03" style="height: 150px; width: 200px;"></div>
         <div class="titulo">Terceira noticia</div>
       </div>
       <div class="noticia">
-        <div class="imagem"><img src="img/imagem04.jpg" alt="imagem04" style="height: 150px; width: 200px"></div>
+        <div class="imagem"><img src="./assets/img/imagem04.jpg" alt="imagem04" style="height: 150px; width: 200px"></div>
         <div class="titulo">Quarta noticia</div>
       </div>
     </div>
     <div id="texto_vertical">
       <div class="titulo_secundario"><h3>O que é pobreza mestrual?</h3></div>
       <div class="informacao">
-        <div class="imagem"><img src="img/imagem01.jpg" alt="imagem01" style="height: 150px; width: 200px;"></div>
+        <div class="imagem"><img src="./assets/img/imagem01.jpg" alt="imagem01" style="height: 150px; width: 200px;"></div>
         <div class="texto_informativo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias incidunt necessitatibus provident minima perferendis, ipsa dolore quae illum unde? Reiciendis illo culpa, eaque ad delectus tempore suscipit blanditiis consectetur voluptatum!</div>
       </div>
       <div class="titulo_secundario"><h3>Como esse assunto e tratado na escola?</h3></div>
       <div class="informacao">
-        <div class="imagem"><img src="img/imagem02.jpg" alt="imagem03" style="height: 150px; width: 200px;"></div>
+        <div class="imagem"><img src="./assets/img/imagem02.jpg" alt="imagem03" style="height: 150px; width: 200px;"></div>
         <div class="texto_informativo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam placeat pariatur explicabo ex. Laborum vero, earum aliquam quidem eos debitis, rem aliquid ipsum corrupti fuga cum at beatae sit? Odio!</div>
       </div>
       <div class="titulo_secundario"><h3>O que o estado de São Paulo faz sobre isso?</h3></div>
       <div class="informacao">
-        <div class="imagem"><img src="img/imagem03.jpg" alt="imagem03" style="height: 150px; width: 200px;"></div>
+        <div class="imagem"><img src="./assets/img/imagem03.jpg" alt="imagem03" style="height: 150px; width: 200px;"></div>
         <div class="texto_informativo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facere aliquid consectetur dolore libero! Sequi magnam ab ipsam excepturi! Ratione fugiat quidem velit molestias repellendus dolore sit suscipit minima libero.</div>
       </div>
     </div>
@@ -99,7 +136,7 @@
     <!-- Noticias/informação destaques-->
     <div class="destaque">
       <!--calendario-->
-      <div class="wrapper">
+      <div class="agenda">
         <div class="topo">
             <p class="current-date"></p>
             <div class="icons">
@@ -180,6 +217,14 @@
     </div>
   </footer>
   <!-- fim do rodape -->
-  <script src="script.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/slides.js"></script>
+  <script>
+    initSlider({
+        autoPlay: false,
+        startAtIndex: 0,
+        timeInterval: 3000,
+    })
+  </script>
 </body>
 </html>

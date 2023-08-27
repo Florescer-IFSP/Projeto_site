@@ -6,13 +6,13 @@
     margin-bottom: 50px;
 }
 
-.wrapper {
+.agenda {
     width: 400px;
     background-color: white;
     border-radius: 10px;
 }
 
-.wrapper .topo {
+.agenda .topo {
     display: flex;
     align-items: center;
     padding: 25px 30px 10px;
