@@ -75,7 +75,6 @@ nav {
     position: relative;
     display: none;
     cursor: pointer;
-    z-index: 2;
 }
 
 .mobile-menu div {
@@ -158,8 +157,6 @@ main {
     position: relative;
     padding: 0px;
 	background-image: linear-gradient(to left, white  , white );
-    display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -219,12 +216,12 @@ section {
 
 .titulo_secundario {
     color: white;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-size: 110px;
     font-style: arial;
 }
 .informacao {
-    padding-top: 20px;
+    padding-top: 40px;
     margin: 10px;
     height: 450px;
     width: 450px;
@@ -262,6 +259,11 @@ section {
     margin-bottom: 50px;
     text-align: center;
     font-style: arial;
+}
+
+.texto_informativo {
+    margin: auto;
+    width: 350px;
 }
 
 .destaque {
