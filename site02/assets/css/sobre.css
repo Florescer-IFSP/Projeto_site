@@ -7,3 +7,11 @@
 	color: #c57783;
 	font-weight: bold;
 }
+
+#subtitulo {
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+	color: white;
+	text-shadow: #3B543C 0.1em 0.1em 0.2em
+}

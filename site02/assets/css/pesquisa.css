@@ -6,12 +6,20 @@ main {
     padding-bottom: 50px;
 }
 
+.conteudo {
+    text-align: center;
+    font-size: 48px;
+    font-family: tahoma;
+    color: #c57783;
+    font-weight: bold;
+}
+
 .pesquisa {
     background-color: #93C095; /* caixa interna*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 3rem 3.5rem;
-    margin: 20px 50px;
+    margin: 20px 150px;
     border-radius: 20px;
 }
 

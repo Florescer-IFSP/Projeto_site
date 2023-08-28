@@ -1,6 +1,7 @@
-img {
+.col-sm-4 img {
   margin: auto;
   display: block;
+  border-radius: 20px;
 }
 
 .headerTitulo {
