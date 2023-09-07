@@ -45,7 +45,7 @@ main {
     text-align: center;
 }
 
-.ondas {
+.foco {
     min-height: 80vh;
     background-color: #ffbcb5;
     margin: 50px 50px;
@@ -109,3 +109,42 @@ main {
         height: 42px;
     }
 }
+
+/* SECTION GRID 3 */
+
+.destaque {
+    background-color: #00f80c00;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px;
+}
+  
+.destaque-item:nth-child(1) {
+    grid-row: 1 / 3;
+}
+
+.destaque-item {
+    display: grid;
+}
+
+.destaque-item img {
+    max-width: 100%;
+    display: block;
+    grid-column: 1;
+    grid-row: 1/3;
+    align-self: end;
+}
+
+.destaque-item p {
+    margin: 0px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    color: white;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+}
+
