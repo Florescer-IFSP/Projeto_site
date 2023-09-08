@@ -1,9 +1,26 @@
 .conteudo{
-    
+    margin: 0px 150px; 
+}
+
+.imagem-titulo {
+    margin: auto;
+}
+
+.imagem-titulo {
+    max-width: 600px;
+    width: 100%;
+}
+
+.titulo {
+    text-align: left;
+}
+
+main{
+    padding: 50px;
 }
 
 .evento{
-    margin: 200px;
+    margin: 0px 200px;
 }
 
 .texto{
