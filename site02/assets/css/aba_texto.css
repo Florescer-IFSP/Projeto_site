@@ -1,0 +1,32 @@
+.conteudo{
+    
+}
+
+.evento{
+    margin: 200px;
+}
+
+.texto{
+    text-align: justify;
+}
+
+.texto p{
+    font-family: Calibri, Arial, Verdana, sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+.imagem-evento{
+    margin: 100px auto;
+    max-width: 600px;
+}
+
+.imagem-evento img{
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .evento{
+        margin:100px
+    }
+}
