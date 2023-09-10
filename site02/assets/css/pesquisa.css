@@ -46,11 +46,29 @@ main {
 }
 
 .foco {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     min-height: 80vh;
     background-color: #ffbcb5;
     margin: 50px 50px;
+    padding: 50px;
     border-radius: 20%;
     position: relative;
+}
+
+.foco .img{
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+
+.foco .img img{
+    width: 100%;
+}
+
+.foco .texto_pesquisa{
+    max-width: 800px;
 }
 
 .custom-shape-divider-top-1689987019 {
@@ -79,6 +97,9 @@ main {
     .custom-shape-divider-top-1689987019 svg {
         width: calc(100% + 1.3px);
         height: 42px;
+    }
+    .foco{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
