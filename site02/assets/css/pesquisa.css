@@ -16,10 +16,11 @@ main {
 
 .pesquisa {
     background-color: #93C095; /* caixa interna*/
+    max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 3rem 3.5rem;
-    margin: 20px 150px;
+    margin: 20px auto;
     border-radius: 20px;
 }
 
@@ -53,22 +54,31 @@ main {
     background-color: #ffbcb5;
     margin: 50px 50px;
     padding: 50px;
-    border-radius: 20%;
+    border-radius: 10%;
     position: relative;
 }
 
-.foco .img{
-    max-width: 500px;
+.foco .evento{
+    border-radius: 10px;
+    box-shadow: #292929 0px 6px 6px;
     margin: auto;
-    padding: 20px;
+    max-width: 500px;
+    position: relative;
 }
 
 .foco .img img{
     width: 100%;
+    border-radius: 10px;
 }
 
-.foco .texto_pesquisa{
-    max-width: 800px;
+.foco .evento-description{
+    border-radius: 10px;
+    background: linear-gradient(to top, #000, transparent);
+    color: #fff;
+    position: absolute;
+    padding: 30px;
+    bottom: 0;
+    width: 100%;
 }
 
 .custom-shape-divider-top-1689987019 {
