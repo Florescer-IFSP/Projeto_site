@@ -88,11 +88,12 @@ input {
 }
 
 .lupa {
-    color: white;
+    color: #93663E;
 }
 
 .lupa:hover{
     cursor: pointer;
+	color: #BBBB72;
 }
 
 /* fim das configurações de busca */
