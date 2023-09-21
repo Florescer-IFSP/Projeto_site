@@ -4,7 +4,7 @@
 	text-align: center;
 	font-size: 42px;
 	font-family: tahoma;
-	color: #c57783;
+	color: #93663E;
 	font-weight: bold;
 }
 
@@ -12,16 +12,19 @@
 	text-align: center;
 	font-weight: bold;
 	font-size: 25px;
-	color: white;
-	text-shadow: #3B543C 0.1em 0.1em 0.2em
+	color: #6D6D35;
+
 }
 
 .sobre {
-	background-color: #93C095;
+	background-color: #F1E4CA;
 	border-radius: 20px;
 	padding: 20px;
 	display: grid;
     grid-template-columns: repeat(2, 1fr);
 	width: 1000px;
 	margin: 30px auto;
+}
+iframe{
+  border-radius: 20px;
 }
