@@ -23,16 +23,19 @@ main {
     margin: 20px auto;
     border-radius: 20px;
 }
+.texto{
+    color: white;
+}
 
 .link {
-    background-color: #BBBB72;
+    background-color: #72713E;
     padding: 5px;
     border-radius: 10px;
-    color: black;
+    color: #F1E4CA;
 }
 
 .link:hover{
-    background-color: #F1E4CA;
+    background-color: #BBBB72;
     color: black;
 }
 
@@ -44,6 +47,7 @@ main {
 
 #pesquisas .img {
     text-align: center;
+    border-radius: 10px;
 }
 
 .foco {
@@ -178,5 +182,6 @@ main {
     grid-row: 2;
     align-self: end;
 }
+
 
 
