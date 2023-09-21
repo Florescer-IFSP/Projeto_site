@@ -127,13 +127,17 @@ input {
         right: 0;
         width: 50vh;
         height: 92vh;
-        background: #93663E;
+        background: white;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
         z-index: 2;
+	color: white;
+        border-radius: 30px;
+        border-width: 10px;
+        border-color:  #BBBB72;
     }
 
     .nav-list li {
@@ -143,6 +147,7 @@ input {
 
     .mobile-menu {
         display: block;
+	background: white;
     }
 }
 
