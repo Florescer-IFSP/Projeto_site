@@ -91,7 +91,7 @@
 }
 
 .days li.active::before{
-    background: #9B59B6;
+    background: #C2A580;
 }
 
 .eventos {
@@ -117,7 +117,7 @@
     margin: 10px 0px;
     padding: 0px 10px;
     border-radius: 10px;
-    background-image: linear-gradient(to right,#cf61fa,#d57ff7);
+    background-image: linear-gradient(to right,#C2A580,#C2A580);
 }
 
 .texto-evento{
