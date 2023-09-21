@@ -93,7 +93,7 @@ input {
 
 .lupa:hover{
     cursor: pointer;
-	color: #BBBB72;
+    color: #BBBB72;
 }
 
 /* fim das configurações de busca */
@@ -237,7 +237,7 @@ section {
     border-radius: 20px;
     padding-top: 10px;
     margin: 20px;
-    width: 250px;
+    width: 300px;
 }
 
 .titulo{
@@ -313,7 +313,9 @@ section {
 .imagem img {
     border-radius: 50%;
 }
-
+.img{
+    border-radius: 10px;
+}
 .destaque {
     position: relative;
     background-color: #93663E ;
