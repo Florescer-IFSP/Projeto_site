@@ -16,7 +16,7 @@ main {
 
 .pesquisa {
     background-color: #926E4D; /* caixa interna*/
-    max-width: 1000px;
+    max-width: 800px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 3rem 3.5rem;
@@ -54,9 +54,10 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    max-width: 1000px;
     min-height: 80vh;
     background-color: #72713E;
-    margin: 50px 50px;
+    margin: auto;
     padding: 50px;
     border-radius: 10%;
     position: relative;
@@ -66,7 +67,8 @@ main {
     border-radius: 10px;
     box-shadow: #292929 0px 6px 6px;
     margin: auto;
-    max-width: 500px;
+    max-width: 400px;
+    margin: 50px;
     position: relative;
 }
 
@@ -113,6 +115,20 @@ main {
         height: 42px;
     }
     .foco{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 1100px){
+    .foco{
+        max-width: 600px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .pesquisa {
+        max-width: 400px;
         grid-template-columns: repeat(1, 1fr);
     }
 }
