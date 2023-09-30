@@ -29,9 +29,19 @@ main{
     padding: 50px 0px;
 }
 
+.evento {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px 0px;
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right,#C2A580,#C2A580);
+}
+
 .texto{
     text-align: justify;
-    margin: 0px 200px;
+    margin: 25px 50px;
 }
 
 .texto p{
@@ -45,7 +55,6 @@ main{
     border-radius: 20px;
     padding: 50px 100px;
     max-width: 800px;
-    background-color: #ffbcb5;
 }
 
 .imagem-evento img{
