@@ -1,6 +1,7 @@
 .doacao{
 	padding: 10px;
 	display: grid;
+	align-items: center;
     grid-template-columns: repeat(3, 1fr);
 	margin: 30px auto;
 }
@@ -19,7 +20,7 @@
     position: relative;
 }
 .imagem-doacao img {
-	height: 100%; 
+	height: 200px; 
 	width: 100%;
 }
 
@@ -35,8 +36,9 @@
 	padding: 5px 5px;
 }
 
-.imagem-doacao, .texto-doacao, .contato-doacao{
+.imagem-doacao, .texto-doacao{
 	max-width: 400px;
+	margin: auto;
 }
 
 .headerTitulo {
@@ -80,8 +82,8 @@
 p {
 	text-align: justify, center;
 	font-size: 18px;
-    padding-right: 15%;
-    padding-left: 15%;
+    /*padding-right: 15%;
+    padding-left: 15%;*/
 }
 #p1{
 	text-align: center;
@@ -98,18 +100,10 @@ p {
 }
 
 
-@media screen and (max-width: 768px) {
-#footer_content {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-}
-
-}
-
-@media screen and (max-width: 426px) {
-#footer_content {
+@media screen and (max-width: 900px) {
+.doacao {
     grid-template-columns: repeat(1, 1fr);
-    padding: 3rem 2rem;
+    gap: 2rem;
 }
 
 }
