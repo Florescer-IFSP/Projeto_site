@@ -47,9 +47,14 @@ nav a:hover {
 }
 
 .logo {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+    height: 70px;
+    width: 70px;
+    align-self: normal;
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
 }
 
 nav {
@@ -59,7 +64,7 @@ nav {
     width: fill;
     font-family: Arial, Helvetica, sans-serif;
     background:  white;
-    height: 8vh;
+    height: 70px;
     border-bottom: 1px  groove #C4A180;
 }
 
@@ -134,8 +139,8 @@ input {
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
         z-index: 2;
-	color: white;
-        border-radius: 30px;
+	    color: white;
+        border-radius: 0px 0px 30px 30px;
         border-width: 10px;
         border-color:  #BBBB72;
     }
@@ -317,6 +322,11 @@ section {
     }
 }
 
+@media screen and (max-width: 500px){
+    #texto_vertical{
+        width: 350px;
+    }
+}
 
 
 .imagem img {
@@ -353,8 +363,9 @@ footer {
     text-decoration: none;
 }
 
-#footer_contacts h1{
-    margin-bottom: 0.75rem;
+#footer_contacts img{
+    height: 100px;
+    width: 100px;
 }
 
 #footer_social_media {
