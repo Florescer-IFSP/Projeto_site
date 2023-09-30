@@ -363,9 +363,13 @@ footer {
     text-decoration: none;
 }
 
-#footer_contacts img{
-    height: 100px;
-    width: 100px;
+#footer_contacts{
+    margin-left: 60px;
+}
+
+#footer_contacts .logo_rodape{
+    height: 150px;
+    width: 150px;
 }
 
 #footer_social_media {
