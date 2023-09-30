@@ -1,5 +1,5 @@
 .doacao{
-	padding: 20px;
+	padding: 10px;
 	display: grid;
     grid-template-columns: repeat(3, 1fr);
 	margin: 30px auto;
@@ -11,24 +11,28 @@
 	margin: 10px ;
 	padding: 30px 30px;
 }
-
+#doacao_texto{
+	text-align: center,justify;
+	color: black;
+	font-family: tahoma;
+	font-size: 15px;
+    position: relative;
+}
 .imagem-doacao img {
 	height: 100%; 
 	width: 100%;
 }
 
 .texto-doacao{
-	background-color: #F1E4CA;
+	background-color: white;
 	border-radius: 20px;
-	margin: 10px;
-	padding: 30px 30px;
+	padding: 20px 0px 20px 20px;
 }
 
 .contato-doacao{
-	background-color: #F1E4CA;
+	background-color: white;
 	border-radius: 20px;
-	margin: 10px;
-	padding: 30px 30px;
+	padding: 5px 5px;
 }
 
 .imagem-doacao, .texto-doacao, .contato-doacao{
@@ -40,32 +44,72 @@
 	text-align: center;
 	font-size: 28px;
 	font-family: tahoma;
-	color: #c57783;
+	color: #6D6D35;
+	font-weight: bold;
+}
+.headerTitulo2 {
+	height: 100px;
+	text-align: center;
+	font-size: 28px;
+	font-family: tahoma;
+	color: white;
 	font-weight: bold;
 }
 
-#subtitulo {
+#subtitulo1 {
 	text-align: center;
 	font-weight: bold;
 	margin-bottom: 20px;
 	font-size: 30px;
-	color: white;
-	text-shadow: #3B543C 0.1em 0.1em 0.2em
+	color: #554E3C;
 }
-
+#subtitulo2 {
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 20px;
+	font-size: 30px;
+	color: #634E39;
+}
+#subtitulo3 {
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 20px;
+	font-size: 25px;
+	color: #634E39;
+}
 p {
-	text-align: justify;
+	text-align: justify, center;
 	font-size: 18px;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+#p1{
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 20px;
+	font-size: 20px;
+	color: #634E39;
 }
 
-@media screen and (max-width: 1200px){
-	.doacao {
-		grid-template-columns: repeat(2, 1fr);
-	}
+.conteudodoacao {
+    text-align: justify;
+    padding: 0px 40px 150px 40px;
+    position: relative;
 }
 
-@media screen and (max-width: 900px){
-	.doacao {
-		grid-template-columns: repeat(1, 1fr);
-	}	
+
+@media screen and (max-width: 768px) {
+#footer_content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+}
+
+@media screen and (max-width: 426px) {
+#footer_content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
+}
+
 }
