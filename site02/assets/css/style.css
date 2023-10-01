@@ -315,6 +315,11 @@ section {
 
 #texto_vertical .informacao{
     margin: auto;
+    padding-bottom: 25px;
+}
+
+.pergunta{
+    margin-bottom: 50px;
 }
 
 .link-vejamais {
@@ -323,11 +328,18 @@ section {
     width: 100px;
     padding: 5px;
     border-radius: 10px;
+    
+}
+
+.link-vejamais a{
     color: #F1E4CA;
 }
 
 .link-vejamais:hover{
     background-color: #BBBB72;
+}
+
+.link-vejamais a:hover{
     color: black;
 }
 
