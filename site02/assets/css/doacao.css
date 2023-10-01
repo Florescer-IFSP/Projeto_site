@@ -1,5 +1,4 @@
 .doacao{
-	padding: 10px;
 	display: grid;
 	align-items: center;
     grid-template-columns: repeat(3, 1fr);
@@ -17,6 +16,7 @@
 	color: black;
 	font-family: tahoma;
 	font-size: 15px;
+	max-width: 400px;
     position: relative;
 }
 .imagem-doacao img {
@@ -27,17 +27,18 @@
 .texto-doacao{
 	background-color: white;
 	border-radius: 20px;
-	padding: 20px 0px 20px 20px;
 }
 
 .contato-doacao{
 	background-color: white;
 	border-radius: 20px;
 	padding: 5px 5px;
+	width: 100px;
+	margin: auto;
 }
 
 .imagem-doacao, .texto-doacao{
-	max-width: 400px;
+	width: 400px;
 	margin: auto;
 }
 
@@ -100,7 +101,7 @@ p {
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
 .doacao {
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
