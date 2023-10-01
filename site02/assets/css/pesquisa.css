@@ -27,6 +27,11 @@ main {
     margin: 20px auto;
     border-radius: 20px;
 }
+
+.pesquisa .img{
+    margin: auto;
+}
+
 .texto{
     color: white;
 }
