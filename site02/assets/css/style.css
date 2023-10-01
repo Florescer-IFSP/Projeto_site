@@ -262,16 +262,15 @@ section {
 .titulo_secundario {
     color: white;
     margin-bottom: 20px;
+    height: 50px;
     font-size: 110px;
     font-style: arial;
 }
 .informacao {
-    padding-top: 40px;
-    margin: 10px;
-    width: 450px;
-    height: 450px;
+    margin: 40px;
+    max-width: 400px;
+    height: 400px;
     background-color: #F1E4CA;
-    border-radius: 50%;
 }
 
 #noticias_horizontal {
@@ -297,7 +296,8 @@ section {
 
 #texto_vertical {
     margin: 50px auto;
-    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     text-align: center;
     font-style: arial;
 }
