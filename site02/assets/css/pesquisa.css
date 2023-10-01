@@ -29,7 +29,7 @@ main {
 }
 
 .pesquisa .img{
-    margin: auto;
+    
 }
 
 .texto{
@@ -56,6 +56,7 @@ main {
 
 #pesquisas .img {
     text-align: center;
+    margin: auto;
     border-radius: 10px;
 }
 
