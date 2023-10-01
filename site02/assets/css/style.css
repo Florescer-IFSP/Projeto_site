@@ -48,7 +48,7 @@ nav a:hover {
 
 .logo {
     height: 70px;
-    width: 70px;
+    width: 240px;
     align-self: normal;
 }
 
@@ -364,12 +364,16 @@ footer {
 }
 
 #footer_contacts{
-    margin-left: 60px;
+    height: 130px;
+    width: 240px;
+    background-color: white;
+    border-radius: 10%;
 }
 
-#footer_contacts .logo_rodape{
-    height: 150px;
-    width: 150px;
+#footer_contacts .logo_rodape img{
+    height: 120px;
+    width: 240px;
+
 }
 
 #footer_social_media {
