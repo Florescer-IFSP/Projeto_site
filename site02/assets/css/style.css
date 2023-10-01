@@ -57,6 +57,17 @@ nav a:hover {
     width: 100%;
 }
 
+.nav-redesocial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
 nav {
      display: flex;
     justify-content: space-around;
@@ -306,27 +317,49 @@ section {
     margin: auto;
 }
 
+.link-vejamais {
+    margin: auto;
+    background-color: #72713E;
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    color: #F1E4CA;
+}
+
+.link-vejamais:hover{
+    background-color: #BBBB72;
+    color: black;
+}
+
+@media screen and (max-width: 1150px) {
+    #texto_vertical {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem 2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #texto_vertical {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
+
 @media screen and (max-width: 700px) {
     #noticias_horizontal {
         grid-template-columns: repeat(1, 1fr);
         padding: 3rem 2rem;
     }
-
-    .informacao{
-        padding-top: 20px;
-        width: 300px;
-        height: 300px;
-    }
-    
-    .texto_informativo {
-        font-size: 12px;
-        width: 280px;
-    }
 }
 
 @media screen and (max-width: 500px){
-    #texto_vertical{
-        width: 350px;
+    .pergunta{
+        max-width: 300px;
+    }
+
+    .texto_informativo{
+        max-width: 300px;
+        padding: 10px;
     }
 }
 
