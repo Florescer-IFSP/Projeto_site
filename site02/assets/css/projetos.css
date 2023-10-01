@@ -21,11 +21,23 @@
 }
 
 .projetos{
-	width: 800px;
 	margin: auto;
 	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 	background-color: #C2A580;
 	border-radius: 20px;
+}
+
+#subtitulo{
+	text-align:center;
+}
+
+#pTexto {
+	max-width: 600px;
+	padding: 10px;
+	margin: 10px;
+	background-color: #F1E4CA;
 }
 
 @media screen and (max-width: 850px){
