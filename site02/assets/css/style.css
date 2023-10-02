@@ -425,13 +425,12 @@ footer {
 #footer_contacts{
     height: 130px;
     width: 240px;
-    background-color: white;
-    border-radius: 10%;
+ 
 }
 
 #footer_contacts .logo_rodape img{
-    height: 120px;
-    width: 240px;
+    height: 150px;
+    width: 220px;
 
 }
 
