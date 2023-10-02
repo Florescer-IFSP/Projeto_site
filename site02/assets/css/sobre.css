@@ -16,6 +16,11 @@
 
 }
 
+p{
+	font-size: 18px;
+	padding-top: 10px;
+}
+
 .sobre {
 	background-color: #F1E4CA;
 	border-radius: 20px;
