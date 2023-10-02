@@ -75,6 +75,15 @@
 	font-size: 25px;
 	color: #634E39;
 }
+
+#subtitulo4 {
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 20px;
+	font-size: 30px;
+	color: #FFFFFF	;
+}
+
 p {
 	text-align: justify, center;
 	font-size: 18px;
