@@ -26,7 +26,6 @@
 .projetos{
 	margin: auto;
 	padding: 20px;
-	background-color: #C2A580;
 	border-radius: 20px;
 }
 
@@ -38,6 +37,24 @@
 
 #subtitulo{
 	text-align:center;
+}
+
+
+
+.area1{
+	background-color: #DACBB8;
+}
+
+.area2{
+	background-color: #F1E4CA;
+}
+
+.area3{
+	background-color: #BBBB72;
+}
+
+.area4{
+	background-color: #B6A882;
 }
 
 .areatexto{
