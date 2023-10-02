@@ -15,9 +15,12 @@
 	text-shadow: #3B543C 0.1em 0.1em 0.2em
 }
 
-#pTexto {
+.pTexto {
 	text-align: justify;
 	font-size: 16px;
+	max-width: 600px;
+	padding: 20px;
+	margin: 10px;
 }
 
 .projetos{
@@ -43,10 +46,9 @@
 	background-color: #F1E4CA;
 }
 
-#pTexto {
-	max-width: 600px;
-	padding: 20px;
-	margin: 10px;
+#Tdiferente{
+	width: 343px;
+    padding-left: 58px;
 }
 
 .pdf {
