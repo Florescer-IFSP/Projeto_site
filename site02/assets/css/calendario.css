@@ -91,7 +91,7 @@
 }
 
 .days li.active::before{
-    background: #C2A580;
+    background: #67a067;
 }
 
 .eventos {
@@ -124,7 +124,7 @@
     margin: 10px 0px;
     padding: 0px 10px;
     border-radius: 10px;
-    background-color: #80c280;
+    background-color: #67a067;
 }
 
 .texto-evento{
