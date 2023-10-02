@@ -26,10 +26,14 @@
 .projetos{
 	margin: auto;
 	padding: 20px;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
 	background-color: #C2A580;
 	border-radius: 20px;
+}
+
+.projeto{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
 }
 
 #subtitulo{
@@ -46,9 +50,11 @@
 	background-color: #F1E4CA;
 }
 
-#Tdiferente{
-	width: 343px;
-    padding-left: 58px;
+.linha-divisoria{
+	width: 94vw;
+	height: 5px;
+	margin: 20px 2vw;
+	background-color: #F1E4CA;
 }
 
 .pdf {
