@@ -1,0 +1,62 @@
+{% extends 'bases/base.html' %}
+{% load static %}
+{% block 'head' %}
+
+    <link href="{% static 'coletivorevolucaodasflores/css/pesquisa.css' %}" rel="stylesheet">
+
+{% endblock %}
+
+{% block 'header' %}
+<div class="conteudo">Eventos e Pesquisas</div>
+{% endblock %}
+{% block 'main' %}
+    {% for article in eventosND5 %}
+    <div class="pesquisas">
+        <div class="pesquisa">
+          <div class="img"><img src="{{ article.foto1.url}}" alt="imagem01" class="img" style="height: 200px; width: 250px;"></div>
+          <div class="texto_pesquisa">
+              <h1>{{ article.titulo}}</h1>
+              <p>{{ article.texto1|truncatechars:200}}</p>
+             <br> <a class="link" href="{% url 'visualizar_evento' article.id %}">Veja mais</a>
+          </div>
+        </div>
+    </div>
+    {% endfor %}
+    <div class="foco">
+        {% for article in eventosD %}
+            <div class="evento">
+                <div class="img"><a href="{% url 'visualizar_evento' article.id %}"><img src="{{ article.foto1.url}}" alt="imagem01"></a></div>
+                <div class="evento-description">
+                <h3>{{ article.titulo}}</h3>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    {% for article in eventosND10 %}
+    <div class="pesquisas">
+        <div class="pesquisa">
+          <div class="img"><img src="{{ article.foto1.url}}" alt="imagem01" class="img" style="height: 200px; width: 250px;"></div>
+          <div class="texto_pesquisa">
+              <h1>{{ article.titulo}}</h1>
+              <p>{{ article.texto1|truncatechars:200}}</p>
+             <br> <a class="link" href="{% url 'visualizar_evento' article.id %}">Veja mais</a>
+          </div>
+        </div>
+    </div>
+    {% endfor %}
+    <div class="botoes">
+        <div class="avancar">
+        {% if page_obj.has_previous %}
+            <a class="proxima" href="?page={{ page_obj.previous_page_number }}">Anterior</a>
+        {% endif %}
+        </div>
+        <div class="voltar">
+        {% if page_obj.has_next %}
+            <a class="anterior" href="?page={{ page_obj.next_page_number }}">Proxima</a>
+        {% endif %}
+        </div>
+    </div>
+{% endblock %}
+<!--
+{% block 'js' %}
+{% endblock %}-->

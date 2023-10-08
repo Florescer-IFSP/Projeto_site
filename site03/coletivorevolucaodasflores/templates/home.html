@@ -1,0 +1,191 @@
+{% extends 'bases/base.html' %}
+{% load static %}
+{% block 'head' %}
+
+
+    <link rel="stylesheet" href="{% static 'coletivorevolucaodasflores/css/calendario.css' %}">
+    <link rel="stylesheet" href="{% static 'coletivorevolucaodasflores/css/carrossel.css' %}">
+    <link rel="stylesheet" href="{% static 'coletivorevolucaodasflores/css/home.css' %}">
+    <script src="{% static 'coletivorevolucaodasflores/js/calendario.js' %}" defer></script>
+{% endblock %}
+
+{% block 'header' %}
+<div class="wrapper">
+    <div class="slide-wrapper" data-slide="wrapper">
+        <button class="slide-nav-button slide-nav-previous fas fa-chevron-left" data-slide="nav-previous-button"></button>
+        <button class="slide-nav-button slide-nav-next fas fa-chevron-right" data-slide="nav-next-button"></button>
+        <div class="slide-list" data-slide="list">
+            <div class="slide-item" data-slide="item" data-index="0">
+                <div class="slide-content">
+                    <img class="slide-image" src="{% static 'coletivorevolucaodasflores/img/carrossel1.jpeg' %}" alt="Imagem01">
+                </div>
+            </div>
+            <div class="slide-item" data-slide="item" data-index="1">
+                <div class="slide-content">
+                    <img class="slide-image" src="{% static 'coletivorevolucaodasflores/img/carrossel2.jpeg' %}" alt="Imagem02">
+                </div>
+            </div>
+            <div class="slide-item" data-slide="item" data-index="2">
+                <div class="slide-content">
+                    <img class="slide-image" src="{% static 'coletivorevolucaodasflores/img/carrossel3.jpeg' %}" alt="Imagem03">
+                </div>
+            </div>
+        </div>
+        <div class="slide-controls" data-slide="controls-wrapper">
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block 'main' %}
+<div id="noticias_horizontal">
+    {% for e in eventos %}
+      <div class="noticia">
+        <div class="imagemevento"><a href="{% url 'visualizar_evento' e.id %}"><img src="{{ e.foto1.url}}" alt="imagem01"></a></div>
+        <div class="titulo">{{ e.titulo}}</div>
+      </div>
+    {% endfor %}
+
+  </div>
+  <div id="texto_vertical">
+    <div class="pergunta">
+      <div class="titulo_secundario"><h3>O que é pobreza mestrual?</h3></div>
+      <div class="informacao">
+        <div class="imagem"><img src="{% static 'coletivorevolucaodasflores/img/pobrezamestrualemSP.jpeg' %}" alt="imagem01" style="height: 150px; width: 200px;"></div>
+        <div class="texto_informativo">A pobreza menstrual é um assunto complexo e interdisciplinar que abrange muitas problemáticas que devem sempre ser analisadas de forma integrada, pois a falta de acesso a recursos, a infraestrutura e ao conhecimento impede que corpos que menstruam tenham plena capacidade de cuidar da sua menstruação. 
+        </div>
+        <div class="link-vejamais"><a href="{% url 'visualizar_evento' 17 %}">Veja mais</a></div>
+      </div>
+    </div>
+    <div class="pergunta">
+      <div class="titulo_secundario"><h3>Como esse assunto e tratado na escola?</h3></div>
+      <div class="informacao">
+        <div class="imagem"><img src="{% static 'coletivorevolucaodasflores/img/nasescolas.jpg' %}" alt="imagem03" style="height: 150px; width: 200px;"></div>
+        <div class="texto_informativo">A pobreza menstrual é uma questão que, embora muitas vezes seja invisibilizada, afeta um número grande de estudantes ao redor do mundo, mas principalmente em países com alta desigualdade social, como o Brasil. Trata-se da falta de acesso a produtos de higiene menstruais adequados devido a restrições financeiras, o que resulta em consequências ruins para a saúde e o bem-estar das jovens e estudantes. Contudo, a problemática é especialmente notável no ambiente escolar, onde as jovens passam grande parte de seu tempo e onde a pobreza menstrual se torna mais notável. </div>
+        <div class="link-vejamais"><a href="{% url 'visualizar_evento' 2 %}">Veja mais</a></div>
+      </div>
+    </div>
+    <div class="pergunta">
+      <div class="titulo_secundario"><h3>O que o estado de São Paulo faz sobre isso?</h3></div>
+      <div class="informacao">
+        <div class="imagem"><img src="{% static 'coletivorevolucaodasflores/img/pobrezamestrual.jpg' %}" alt="imagem03" style="height: 150px; width: 200px;"></div>
+        <div class="texto_informativo">A pobreza menstrual A pobreza menstrual é um problema que afeta diversos municípios, incluindo a cidade de Piracicaba e sua região. A falta de acesso a absorventes e itens de higiene menstrual pode causar dificuldades e constrangimentos para as pessoas que enfrentam essa situação.</div>
+        <div class="link-vejamais"><a href="{% url 'visualizar_evento' 3 %}">Veja mais</a></div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Noticias/informação destaques-->
+  <div class="destaque">
+    <!--calendario-->
+    <div class="agenda">
+      <div class="topo">
+          <p class="current-date"></p>
+          <div class="icons">
+                <div id="anterior"><span id="prev" class="material-symbols-outlined">chevron_left</span></div>
+                
+                <div id="proximo"><span id="next" class="material-symbols-outlined">chevron_right</span></div>
+
+          </div>
+      </div>
+      <div class="calendar">
+          <ul class="weeks">
+              <li>Dom</li>
+              <li>Seg</li>
+              <li>Ter</li>
+              <li>Qua</li>
+              <li>Qui</li>
+              <li>Sex</li>
+              <li>Sab</li>
+          </ul>
+          <ul class="days"></ul>
+      </div>
+    </div>
+    <!--Eventos do calendario-->
+    <div class="EVENTOSG">
+      <h2>Eventos</h2>
+      <div id="eventos">
+        {% if eventos_do_mes %}
+          {% for em in eventos_do_mes%}
+          <div class="evento">
+            <div class="data">DIA:{{em.data|date:"d"}}</div>
+            <p>{{em.evento}}</p>
+            <div class="data">ENDEREÇO:</div>
+            <P>{{em.local}} </P>
+          </div>
+          {% endfor %}
+        {% else %}
+          <div class="evento NTE"><p>Não Possui evento nesse mês</p></div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block 'js' %}
+<script src="{% static 'coletivorevolucaodasflores/js/slides.js' %}"></script>
+<script>
+initSlider({
+    autoPlay: true,
+    startAtIndex: 0,
+    timeInterval: 3000,
+})
+</script>
+<script>
+  document.getElementById('anterior').addEventListener('click', function() {
+      atualizarEventos('anterior');
+  });
+  
+  document.getElementById('proximo').addEventListener('click', function() {
+      atualizarEventos('proximo');
+  });
+  var dataAtual = new Date();
+  var mesAtual = dataAtual.getMonth() + 1;
+  var anoAtual = dataAtual.getFullYear();
+  
+  function atualizarEventos(direcao) {
+
+    if (direcao === 'anterior') {
+      if (mesAtual < 1){
+        mesAtual = 12
+        anoAtual = anoAtual - 1
+      }
+      else{
+        mesAtual = mesAtual - 1;
+      }
+        // Lógica para ir para o mês anterior
+    } else if (direcao === 'proximo') {
+      if (mesAtual > 12){
+        mesAtual = 1
+        anoAtual = anoAtual + 1
+      }
+      else{
+        mesAtual = mesAtual + 1;
+      }
+      
+        // Lógica para ir para o próximo mês
+    }
+
+    
+    var url = 'http://127.0.0.1:8000/obter/?mes=' + mesAtual + '&ano=' + anoAtual;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            var eventosContainer = document.getElementById('eventos');
+            eventosContainer.innerHTML = ''; // Limpa o conteúdo atual
+            data.forEach(function(evento) {
+                var eventoHtml = '<div class="evento"><div class="data">' + evento.data + '</div><p>' + evento.titulo + '</p><div class="data">ENDEREÇO:</div><P>'+evento.local+'</p></div>';
+                eventosContainer.innerHTML += eventoHtml;
+            });
+            if (eventosContainer.innerHTML == ''){
+              var eventoHtml = '<div class="evento NTE"><p>Não Possui evento nesse mês</p></div>';
+              eventosContainer.innerHTML += eventoHtml;
+            }
+        })
+        .catch(error => console.error('Erro:', error));
+  }
+</script>
+
+{% endblock %}

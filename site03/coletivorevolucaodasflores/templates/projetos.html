@@ -1,0 +1,58 @@
+{% extends 'bases/base.html' %}
+{% load static %}
+{% block 'head' %}
+
+    <link href="{% static 'coletivorevolucaodasflores/css/projetos.css' %}" rel="stylesheet">
+
+{% endblock %}
+
+{% block 'header' %}
+<p id="headerTitulo">ECOFEMINISMO, EDUCAÇÃO AMBIENTAL E DESENVOLVIMENTO SUSTENTÁVEL:<br> A IMPORTÂNCIA DO COMBATE À POBREZA MENSTRUAL</p>
+{% endblock %}
+
+{% block 'main' %}
+<div class="projetos">
+  <div class="projeto area1">
+    
+    <div class="areatexto"><img src="{% static 'coletivorevolucaodasflores/img/renascer.jpg' %}" alt="comunidade renascer"></div>
+    <div>
+      <h3 id="subtitulo">COMUNIDADE RENASCER</h3>
+      <p class="pTexto">O projeto tem como proposta combater a pobreza menstrual de forma mais sustentável. Escolhemos a comunidade Renascer para realizar o projeto, atendemos cerca de 100 mulheres, disponibilizamos kits com tecnologias ecológicas de manejo menstrual, além da realização de oficinas com temas em educação sexual, educação menstrual, ginecologia natural e hortas medicinais</p>
+    </div>
+  </div>
+  <div class="linha-divisoria"></div> 
+  <div class="projeto area2">
+    <div class="areatexto"><img src="{% static 'coletivorevolucaodasflores/img/hortinha.jpg' %}" alt="horta"></div>
+    <div>
+      <h3 id="subtitulo">RENASCER & PANC'S</h3>
+      <p class="pTexto">Estamos estabelecendo parcerias para fazer uma horta comunitária, onde serão plantadas PANC’s, as plantas alimentícias não convencionais que possuem os macro nutrientes essenciais para a saúde menstrual.</p>
+    </div>
+  </div>
+  <div class="linha-divisoria"></div>
+  <div class="projeto area3">
+    <div class="areatexto"><img src="{% static 'coletivorevolucaodasflores/img/escolas.jpg' %}" alt="projetos em escolas"></div>
+    <div>
+      <h3 id="subtitulo">EXPANÇÃO DO PROJETO PARA ESCOLA</h3>
+      <p class="pTexto">Atualmente estamos com a proposta de expandir nossos projetos para as escolas, em que serão promovidos momentos de educação sexual, ambiental e menstrual para os alunes, com o objetivo de desmistificar a menstruação tanto para todes.</p>
+    </div>
+  </div>
+  <div class="linha-divisoria"></div>
+  <div class="projeto cartilha area4">
+    <div class="areatexto"><img src="{% static 'coletivorevolucaodasflores/img/cartilha.jpg' %}" alt="cartilhas"></div>
+    <div>
+      <h3 id="subtitulo">CARTILHA EDUCATIVA SOBRE ECOFEMINISMO, SAÚDE MENSTRUAL E SUSTENTABILIDADE.</h3>
+      <div class="pTexto">
+        <p>Nosso projeto fala sobre ecofeminismo e tem como objetivo empoderar mulheres por meio do conhecimento e acesso a tecnologias sustentáveis. Cuidar da saúde de corpos que menstruam é também cuidar da saúde da atureza.</p>
+        <div class="pdf">
+          baixe a cartilha aqui 
+          <a href="{% url 'dowload_cartilha' %}"><img src="{% static 'coletivorevolucaodasflores/img/cartilhapdf.png' %}" alt="capa da cartilha"></a>
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>  
+{% endblock %}
+
+{% block 'js' %}
+
+{% endblock %}

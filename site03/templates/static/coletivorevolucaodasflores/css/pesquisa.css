@@ -1,0 +1,247 @@
+#carrossel{
+	display: grid;
+	align-items: center;
+}
+
+main {
+    width: 100%;
+    background: #C2A580;
+    background-size: cover;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.conteudo {
+    text-align: center;
+    font-size: 48px;
+    font-family: tahoma;
+    color: #554E3C;
+    font-weight: bold;
+    padding-bottom: 120px;
+}
+
+.pesquisa {
+    background-color: #F1E4CA; /* caixa interna*/
+    max-width: 78%;
+    max-height: 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem 3.5rem;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+.pesquisa .img{
+    margin: auto;
+}
+
+.texto{
+    color: white;
+}
+.link {
+    background-color: #72713E;
+    padding: 5px;
+    border-radius: 10px;
+    color: #F1E4CA;
+}
+
+.link:hover{
+    background-color: #BBBB72;
+    color: black;
+}
+
+#pesquisas div{
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+}
+
+#pesquisas .img {
+    text-align: center;
+    border-radius: 10px;
+}
+
+.foco {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    max-width: 1000px;
+    min-height: 80vh;
+    background-color: #72713E;
+    margin: auto;
+    padding: 50px;
+    border-radius: 10%;
+    position: relative;
+}
+
+.foco .evento{
+    border-radius: 10px;
+    box-shadow: #292929 0px 6px 6px;
+    margin: auto;
+    max-width: 400px;
+    margin: 50px;
+    position: relative;
+}
+
+.foco .img img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.foco .evento-description{
+    border-radius: 10px;
+    background: linear-gradient(to top, #000, transparent);
+    color: #fff;
+    position: absolute;
+    padding: 30px;
+    bottom: 0;
+    width: 100%;
+}
+
+.custom-shape-divider-top-1689987019 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1689987019 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 97px;
+}
+
+.custom-shape-divider-top-1689987019 .shape-fill {
+    fill: #709C72;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1689987019 svg {
+        width: calc(100% + 1.3px);
+        height: 42px;
+    }
+    .foco{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 1100px){
+    .foco{
+        max-width: 600px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .pesquisa {
+        max-width: 400px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.custom-shape-divider-bottom-1689986656 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1689986656 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 76px;
+}
+
+.custom-shape-divider-bottom-1689986656 .shape-fill {
+    fill: #709C72;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1689986656 svg {
+        width: calc(100% + 1.3px);
+        height: 42px;
+    }
+}
+
+/* SECTION GRID 3 */
+
+.destaque {
+    background-color: #00f80c00;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px;
+}
+  
+.destaque-item:nth-child(1) {
+    grid-row: 1 / 3;
+}
+
+.destaque-item {
+    display: grid;
+}
+
+.destaque-item img {
+    max-width: 100%;
+    display: block;
+    grid-column: 1;
+    grid-row: 1/3;
+    align-self: end;
+}
+
+.destaque-item p {
+    margin: 0px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    color: white;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+}
+
+
+.botoes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    max-width: 800px;
+}
+
+.avancar {
+    text-align: left;
+}
+
+.voltar {
+    text-align: right;
+}
+
+.anterior, .proxima {
+    background-color: #72713E;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size:16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.anterior:hover, .proxima:hover{
+    background-color: #BBBB72;
+    text-decoration: none;
+    color: black;
+}
+
+

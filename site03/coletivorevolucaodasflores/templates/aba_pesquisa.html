@@ -1,0 +1,26 @@
+{% extends 'bases/base.html' %}
+{% load static %}
+{% block 'head' %}
+
+    <link href="{% static 'coletivorevolucaodasflores/css/aba_pesquisa.css' %}" rel="stylesheet">
+
+{% endblock %}
+
+{% block 'header' %}
+<img class="imagem-titulo" src="{{ evento.foto1.url}}" alt="">
+<h1 class="titulo">{{evento.titulo}}</h1>
+{% endblock %}
+{% block 'main' %}
+    <div class="evento">
+        <div class="texto">
+          <p>{{ evento.texto1|safe }}</p>
+        </div>
+        <div class="imagem-evento">
+          <img src="{{ evento.foto2.url}}" alt="">
+        </div>
+        <div class="texto">
+          <p>{{ evento.texto2|safe }}</p>
+        </div>
+    </div>
+
+{% endblock %}

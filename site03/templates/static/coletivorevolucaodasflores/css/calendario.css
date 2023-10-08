@@ -1,0 +1,172 @@
+.agenda {
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.agenda .topo {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+
+.topo .current-date{
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+button {
+    background-color: transparent;
+}
+
+.topo .icons {
+    display: flex;
+}
+
+.topo .icons span{
+    height:  38px;
+    width: 38px;
+    color: #878787;
+    font-size: 1.9rem;
+    margin: 0px 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+}
+
+.topo .icons span:hover{
+    background: #f2f2f2;
+}
+
+.topo .icons span:last-child{
+    margin-right: -10px;
+}
+
+.calendar {
+    padding: 20px;
+}
+
+.calendar ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.calendar .days{
+    margin-bottom: 20px;
+}
+
+.calendar .weeks li{
+    font-weight: 500;
+}
+
+.calendar ul li{
+    position: relative;
+    width: calc(100% / 7);
+}
+
+.calendar .days li{
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.days li.inactive{
+    color: #aaa;
+}
+
+.days li.active{
+    color: #fff;
+}
+
+.calendar .days li::before{
+    position:absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.days li:hover::before{
+    background: #f2f2f2;
+}
+
+.days li.active::before{
+    background: #72713E;
+}
+
+
+@media screen and (max-width: 900px) {
+    .destaque {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 50px ;
+    }
+    .eventos {
+        max-width: 400px;
+        padding-top: 100px;
+        padding-left: 0px;
+        margin-right: 50px;
+    }
+}
+
+.EVENTOSG{
+    margin: 0px auto;
+    width: 100%;
+}
+
+.EVENTOSG h2{
+    text-align: center;
+    color: white;
+}
+
+.eventos {
+    max-width: 100%;
+}
+
+.evento {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px auto;
+    padding: 0px 10px;
+    max-width: 500px;
+    border-radius: 10px;
+    background-color: #72713E;
+    color: rgb(216, 223, 216);
+}
+
+.NTE{
+    font-size: 18px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.texto-evento{
+    max-width: 300px;
+    padding-left: 10px;
+}
+
+.data {
+    font-size: 20px;
+    font-style: bold;
+    margin: auto;
+    display: inline-block;
+}
+
+.eventos h2{
+    text-align: center;
+}
+
+.eventos p{
+    display: inline-block;
+}
+
