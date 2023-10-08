@@ -255,20 +255,8 @@ section {
 
 /* fim do teste*/
 
-.noticia {
-    background-color: #F1E4CA;
-    border-radius: 20px;
-    padding-top: 25px;
-    margin: 20px auto;
-    width: 300px;
-}
 
-.titulo{
-    color: black;
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-style: arial;
-}
+
 
 .titulo_secundario {
     color: white;
@@ -292,6 +280,17 @@ section {
     font-style: arial;
 }
 
+.noticia {
+    background-color: #F1E4CA;
+    border-radius: 20px;
+    padding-top: 25px;
+    margin: 20px auto;
+    width: 300px;
+    position: relative;
+    height: 300px; /* Altura do div */
+    overflow: hidden; /* Esconde a parte da imagem que não cabe no div */
+}
+
 .imagemevento{
     max-width: 300px;
     height: 200px;
@@ -302,12 +301,49 @@ section {
     height: 100%;
 }
 
+.titulo{
+    color: black;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-style: arial;
+}
+
 .texto_informativo {
     margin: auto;
     width: 100%;
     padding: 20px;
     text-align: justify;
 }
+
+.imagem-container {
+    position: relative;
+    width: 200px; /* Largura do div */
+    height: 300px; /* Altura do div */
+    overflow: hidden; /* Esconde a parte da imagem que não cabe no div */
+  }
+  
+  .imagem-container img {
+    position: absolute;
+    top: 50%; /* Move a metade superior da imagem para fora do contêiner */
+    left: 50%; /* Move a metade esquerda da imagem para fora do contêiner */
+    transform: translate(-50%, -50%); /* Centraliza a imagem no div */
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+  }
+  
+  .texto-sobre-imagem {
+    position: absolute;
+    bottom: 10px; /* Ajusta a posição vertical do texto para baixo conforme necessário */
+    left: 50%; /* Centraliza o texto horizontalmente */
+    transform: translateX(-50%); /* Centraliza o texto horizontalmente */
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  
 
 @media screen and (max-width: 1300px) {
     #noticias_horizontal {
