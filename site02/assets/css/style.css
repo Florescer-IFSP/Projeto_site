@@ -34,7 +34,9 @@ h1, h2, h3, p{
 /* Fim das criações das variaveis */
 
 /* Barra de navegação */
-
+a:link{
+    text-decoration: none;
+}
 nav a {
     color: #93663E;
     text-decoration: none;
@@ -627,6 +629,12 @@ color: #230007;
 .pdfcartilha{
     position: relative;
     padding-bottom: 100px;
+}
+.pdf a:link{
+    color: #6D6D35;
+}
+.pdf a:hover{
+    color: #634E39;
 }
 
 .cartilha{
