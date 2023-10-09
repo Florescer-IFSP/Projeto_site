@@ -300,8 +300,8 @@ section {
     width: 70%;
     height: 70%;
     -moz-transition: all 0.3s;
-     -webkit-transform: all 0.3s;
-     transition: all 0.3s;
+    -webkit-transform: all 0.3s;
+    transition: all 0.3s;
      padding-bottom: 2px;
  }
 
@@ -313,7 +313,7 @@ section {
      -webkit-transform: scale(1.1);
      transition: scale(1.1);
 }
-}
+
 .imagevento:hover img{
      -moz-transition: scale(1.1);
      -webkit-transform: scale(1.1);
@@ -623,6 +623,12 @@ footer {
 width: 3rem;
 color: #230007;
 */
+
+.pdfcartilha{
+    position: relative;
+    padding-bottom: 100px;
+}
+
 .cartilha{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
