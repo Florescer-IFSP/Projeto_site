@@ -1,24 +1,31 @@
 #headerTitulo {
 	height: 100px;
-    margin: 0px;
 	text-align: center;
-	font-size: 42px;
+	font-size: 28px;
 	font-family: tahoma;
-	color: #93663E;
+	color: #554E3C;
 	font-weight: bold;
-}
+	padding-top: 10px;
+	}
 
-#subtitulo {
+#headerTitulo2 {
+	height: 100px;
 	text-align: center;
+	font-size: 28px;
+	font-family: tahoma;
+	color: white;
 	font-weight: bold;
-	font-size: 25px;
-	color: #6D6D35;
+	padding-top: 20px;
+	}
 
+.conteudosobre {
+    padding: 50px 0px 10px 0px;
 }
 
 p{
 	font-size: 18px;
 	padding-top: 10px;
+	font-family: tahoma;
 }
 
 .sobre {
@@ -29,8 +36,19 @@ p{
     grid-template-columns: repeat(2, 1fr);
 	max-width: 92vw;
 	margin: 30px auto;
+	text-align: center;
 }
 
+.sobrecoletivo {
+	background-color: #D4C59E;
+	border-radius: 20px;
+	padding: 20px 4vw;
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+	max-width: 92vw;
+	margin: 30px auto;
+	padding-bottom: 10px;
+}
 .texto-florescer, .texto-coletivo, .texto-parceria{
 	padding-right: 20px;
 	text-align: justify;
@@ -38,13 +56,15 @@ p{
 
 .imagem-florescer, .localizacao-coletivo, .imagem-parceria {
 	margin: auto;
-	min-height: 300px;
-	max-width: 400px;
+	min-height: 400px;
+	max-width: 500px;
+	border-radius: 10%;
 }
 
 .imagem-florescer img{
 	width: 100%;
 	height: 100%;
+	border-radius: 10%;
 }
 iframe{
   border-radius: 20px;
@@ -54,5 +74,6 @@ iframe{
 	.sobre{
 		max-width: 700px;
 		grid-template-columns: repeat(1, 1fr);
+		text-align: center;
 	}
 }
