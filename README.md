@@ -15,9 +15,29 @@ Este projeto foi idealizado e construído de forma colaborativa por um grupo de 
 - **Controle de Versão:** Git e GitHub.
 
 ## 👥 Equipe e Parcerias
-- **Sophia Joriatti** - [Seu papel, ex: Desenvolvedora Front-end / UI Design]
-- **[Nome do Colega 1]** - [Papel do colega]
-- **[Nome do Colega 2]** - [Papel do colega]
+**Programação**
+- Jonas de Brito Balero (Líder)
+- Kaylane Bernardes Gomes
+- Matheus Beraldo da Silva
+- Sophia Batista Joriatti
+
+**Design**
+- Stéphany Flanthiny Araújo dos Santos (Líder)
+- Ana Júlia da Silva Ramos
+- Geisiane Silva Santos
+- Sophia Batista Joriatti
+
+**Comunicação**
+- Taynara Nogueira Mendes (Líder)
+- Kayke Santana de Lima
+- Milena de Jesus Barreto de Souza
+
+**Pesquisa**
+- Rayssa Manuela Carvalho e Silva (Líder)
+- Ana Caroline Nogueira
+- Jonas Henrique Martins
+- Laisa Marchezani Castriciano
+- Luis Felipe Carriel Furoni
 - **Parceiro Institucional:** Coletivo das Flores (Esalq-USP)
 
 ## 🚀 Como Executar o Projeto
